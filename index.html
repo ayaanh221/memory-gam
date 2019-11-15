@@ -7,56 +7,453 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-
-
+<link rel="stylesheet" href="js/my_script.js" type="text/css" />
+<script  src="js/my_script.js" async></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  
+ 
+  
+  
+  
+  
+  <!-- start of landing page -->
     <title>Hello, world!</title>
   </head>
   <body>
-     <!-- start of landing section -->
-    <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">memory game</h1>
-    <h3 class="lead">how good is your memory? </h3>
-   <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">play</a>
-  </div>
+   
+    <!--start of navigation-->
+        <nav class="navbar navbar-expand-md fixed-top">
+          
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#easy">Easy</a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#medium">Medium</a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#hard">Hard</a>
+             </li>
+             
+            
+            </ul>
+           </div>
+        </nav>
+        
+<!--end of navigation-->
+
+
+ <!-- start of landing page -->
+
+<div id="home">
+    <h1 class="page-title">mix-and-match</h1>
+ 
+  <h2 class="lead">how good is your memory?</h2>
+  
+ 
+  <hr class="my-4">
+  
+
+
+
 </div>
- <!-- start of game section -->
- <h1 class="page-title">mix-and-match</h1>
+  <!-- end of landing page -->
+
+
+
+
+    
+
+   <!-- start of easy game section -->
+
+<div id="easy">
+ <div class="overlay-text ">
+  Click to start
+ </div>
+  <div id="game-over-text" class="overlay-text  ">
+ game over
+ <span class="overlay-text-small"> click to restart</span>
+ </div>
+ <div id="winner-text" class="overlay-text">
+winner
+ <span class="overlay-text-small"> click for next level</span>
+ </div>
+ <h1 class="game-title">easy</h1>
+
  <div class="game-container">
+  
    <div class="game-info-container">
+   
+      
      <div class="game-info">
-       time <span id="time-remaining">100</span>
+       time: <span id="time-remaining">100</span>
      </div>
       <div class="game-info">
-      flips <span id="flips">0</span>
+      flips: <span id="flips">0</span>
      </div>
    </div>
-   <div class="card">
+   <div class="card ">
+    <div class="card-back card-face ">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/snake.jpg" >
+    </div>
+   </div>
+ <div class="card ">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
     <div class="card-front card-face">
-     
+     <img class="card-value" src="assets/images/snake.jpg" >
     </div>
    </div>
-    <div class="card"></div>
-     <div class="card"></div>
-     <div class="card"></div>
-      <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
+   
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    
+   </div>
+   
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+   <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/cow.png" >
+    </div>
+   </div>
+   <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/cow.png" >
+    </div>
+   </div>
+   </div>
+ </div>
+ 
+<!-- end of easy game section -->
+<!-- start of medium game section -->
+
+ <div id="medium">
+ <div class="overlay-text ">
+  Click to start
+ </div>
+  <div id="game-over-text" class="overlay-text  ">
+ game over
+ <span class="overlay-text-small"> click to restart</span>
+ </div>
+ <h1 class="game-title">medium</h1>
+ <div id="winner-text" class="overlay-text">
+winner
+ <span class="overlay-text-small"> click for next level</span>
+ </div>
+ <div class="game-container">
+   <div class="game-info-container">
+     <div class="game-info">
+       time: <span id="time-remaining">100</span>
+     </div>
+      <div class="game-info">
+      flips: <span id="flips">0</span>
+     </div>
+   </div>
+   <div class="card ">
+    <div class="card-back card-face visible">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/snake.jpg" >
+    </div>
+   </div>
+ <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/snake.jpg" >
+    </div>
+   </div>
+   
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/lion.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/lion.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+   
+   
+   
+    
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/chicken.jpg" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/chicken.jpg" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/fish.jpg" >
+    </div>
+   </div>
+   
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/fish.jpg" >
+    </div>
+   </div>
+   </div>
+ </div>
+
+
+
+<!-- end of midium game section -->
+
+ <!-- start of hard game section -->
+ <div id="hard">
+ <div class="overlay-text ">
+  Click to start
+ </div>
+  <div id="game-over-text" class="overlay-text  ">
+ game over
+ <span class="overlay-text-small"> click to restart</span>
+ </div>
+ <h1 class="game-title">hard</h1>
+ <div id="winner-text" class="overlay-text">
+winner
+ <span class="overlay-text-small"> click to restart</span>
+ </div>
+ <div class="game-container">
+   <div class="game-info-container">
+     <div class="game-info">
+       time: <span id="time-remaining">100</span>
+     </div>
+      <div class="game-info">
+      flips: <span id="flips">0</span>
+     </div>
+   </div>
+   <div class="card ">
+    <div class="card-back card-face visible">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/snake.jpg" >
+    </div>
+   </div>
+ <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/snake.jpg" >
+    </div>
+   </div>
+   
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/lion.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/lion.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/dolphin.jpg" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/dolphin.jpg" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/cow.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/cow.png" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/chicken.jpg" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/chicken.jpg" >
+    </div>
+   </div>
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/fish.jpg" >
+    </div>
+   </div>
+   
+    <div class="card ">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/fish.jpg" >
+    </div>
+   </div>
+   </div>
  </div>
  
 <!-- start of game section -->
