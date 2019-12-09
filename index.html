@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="js/my_script.js" type="text/css" />
+<link rel="stylesheet" href="easy.html" type="text/css" />
+<link rel="stylesheet" href="js/my_script.js"  />
 <script  src="js/my_script.js" async></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,7 +23,12 @@
   </head>
   <body>
    
-    <!--start of navigation-->
+    
+      
+       <!--start of navigation-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-right">
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            
         <nav class="navbar navbar-expand-md fixed-top">
           
                <span class="navbar-toggler-icon"></span>
@@ -49,13 +55,12 @@
         
 <!--end of navigation-->
 
-
  <!-- start of landing page -->
 
 <div id="home">
     <h1 class="page-title">mix-and-match</h1>
  
-  <h2 class="lead">how good is your memory?</h2>
+  <h2 class="lead">how good is your memory?</h2> 
   
  
   <hr class="my-4">
@@ -69,45 +74,43 @@
 
 
 
-    
-
-   <!-- start of easy game section -->
+    <!-- start of easy game section -->
 
 <div id="easy">
- <div class="overlay-text ">
+ <div class="overlay-text visible">
   Click to start
  </div>
-  <div id="game-over-text" class="overlay-text  ">
- game over
- <span class="overlay-text-small"> click to restart</span>
- </div>
- <div id="winner-text" class="overlay-text">
-winner
- <span class="overlay-text-small"> click for next level</span>
- </div>
- <h1 class="game-title">easy</h1>
+<audio src="assets/audio/game background music.mp3 " id="audio"></audio>
+<i class="glyphicon glyphicon-play-circle b-play" id="play" onclick="play()"></i>
+
+ 
+
+ <h1 class="game-title" >easy
+
+ </h1>
+ 
 
  <div class="game-container">
   
    <div class="game-info-container">
    
       
-     <div class="game-info">
-       time: <span id="time-remaining">100</span>
-     </div>
-      <div class="game-info">
-      flips: <span id="flips">0</span>
-     </div>
+   
+      
    </div>
-   <div class="card ">
+   
+   
+   
+   
+   <div class="card" data-framework ="trap">
     <div class="card-back card-face ">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
-    <div class="card-front card-face">
+    <div class="card-front card-face"  >
      <img class="card-value" src="assets/images/snake.jpg" >
     </div>
    </div>
- <div class="card ">
+ <div class="card " data-framework ="trap">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -116,82 +119,91 @@ winner
     </div>
    </div>
    
-    <div class="card ">
+  <div class="card" data-framework ="token" >
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
-    
+    <div class="card-front card-face" >
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+  
+    <div class="card" data-framework ="token" >
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
    </div>
    
-    <div class="card ">
-    <div class="card-back card-face">
-     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
-    </div>
-    <div class="card-front card-face">
-     <img class="card-value" src="assets/images/green-animal.png" >
-    </div>
-   </div>
-    <div class="card ">
-    <div class="card-back card-face">
-     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
-    </div>
-    <div class="card-front card-face">
-     <img class="card-value" src="assets/images/green-animal.png" >
-    </div>
-   </div>
-    <div class="card ">
-    <div class="card-back card-face">
+    <div class="card " data-framework ="yogar">
+    <div class="card-back card-face"  >
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
     <div class="card-front card-face">
      <img class="card-value" src="assets/images/elephant.png" >
     </div>
    </div>
-   <div class="card ">
+      <div class="card "data-framework ="yogar" >
     <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face" >
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+   <div class="card " data-framework ="art ">
+    <div class="card-back card-face" >
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
     <div class="card-front card-face">
      <img class="card-value" src="assets/images/cow.png" >
     </div>
    </div>
-   <div class="card ">
-    <div class="card-back card-face">
+   <div class="card "data-framework ="art ">
+    <div class="card-back card-face" >
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
     <div class="card-front card-face">
      <img class="card-value" src="assets/images/cow.png" >
     </div>
    </div>
+  
+
    </div>
+   <div class="right-arrow">
+ <a href="#medium">
+ <img src="assets/images/white-arrow-right.png" width="42" height="42" >
+</a>
+
+</div>
  </div>
  
 <!-- end of easy game section -->
 <!-- start of medium game section -->
 
  <div id="medium">
- <div class="overlay-text ">
-  Click to start
+   <div class="overlay-img visible">
+  
+
  </div>
-  <div id="game-over-text" class="overlay-text  ">
- game over
- <span class="overlay-text-small"> click to restart</span>
- </div>
+ 
+  
  <h1 class="game-title">medium</h1>
- <div id="winner-text" class="overlay-text">
-winner
- <span class="overlay-text-small"> click for next level</span>
- </div>
+ <div class="right-arrow">
+ <a href="#easy">
+  <img src="assets/images/white-arrow-left.png"width="42" height="42">
+ </a>
+</div>
+
  <div class="game-container">
    <div class="game-info-container">
-     <div class="game-info">
-       time: <span id="time-remaining">100</span>
-     </div>
-      <div class="game-info">
-      flips: <span id="flips">0</span>
-     </div>
+     
    </div>
-   <div class="card ">
+  
+
+   <div class="card "  data-framework ="chip">
     <div class="card-back card-face visible">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -199,7 +211,7 @@ winner
      <img class="card-value" src="assets/images/snake.jpg" >
     </div>
    </div>
- <div class="card ">
+ <div class="card "  data-framework ="chip">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -208,7 +220,7 @@ winner
     </div>
    </div>
    
-    <div class="card ">
+    <div class="card "  data-framework ="troop">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -216,7 +228,7 @@ winner
      <img class="card-value" src="assets/images/lion.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="troop">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -224,7 +236,7 @@ winner
      <img class="card-value" src="assets/images/lion.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="mats">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -232,7 +244,7 @@ winner
      <img class="card-value" src="assets/images/green-animal.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="mats">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -240,7 +252,7 @@ winner
      <img class="card-value" src="assets/images/green-animal.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="rice">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -248,7 +260,7 @@ winner
      <img class="card-value" src="assets/images/elephant.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="rice">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -260,7 +272,7 @@ winner
    
    
     
-    <div class="card ">
+    <div class="card " data-framework ="chart">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -268,7 +280,7 @@ winner
      <img class="card-value" src="assets/images/chicken.jpg" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="chart">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -276,7 +288,7 @@ winner
      <img class="card-value" src="assets/images/chicken.jpg" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card "data-framework ="trafic">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -285,7 +297,7 @@ winner
     </div>
    </div>
    
-    <div class="card ">
+    <div class="card "data-framework ="trafic">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -293,7 +305,16 @@ winner
      <img class="card-value" src="assets/images/fish.jpg" >
     </div>
    </div>
+  
+   
    </div>
+   <div class="right-arrow">
+ <a href="#hard">
+  
+  <img src="assets/images/white-arrow-right.png"width="42" height="42">
+ </a>
+</div>
+
  </div>
 
 
@@ -316,14 +337,10 @@ winner
  </div>
  <div class="game-container">
    <div class="game-info-container">
-     <div class="game-info">
-       time: <span id="time-remaining">100</span>
-     </div>
-      <div class="game-info">
-      flips: <span id="flips">0</span>
-     </div>
+     
+      
    </div>
-   <div class="card ">
+   <div class="card " data-framework ="school">
     <div class="card-back card-face visible">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -331,7 +348,7 @@ winner
      <img class="card-value" src="assets/images/snake.jpg" >
     </div>
    </div>
- <div class="card ">
+ <div class="card "  data-framework ="school">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -340,7 +357,7 @@ winner
     </div>
    </div>
    
-    <div class="card ">
+    <div class="card "  data-framework ="cloths">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -348,7 +365,7 @@ winner
      <img class="card-value" src="assets/images/lion.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="cloths">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -356,7 +373,7 @@ winner
      <img class="card-value" src="assets/images/lion.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="boy">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -364,7 +381,7 @@ winner
      <img class="card-value" src="assets/images/green-animal.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card "data-framework ="boy">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -372,7 +389,7 @@ winner
      <img class="card-value" src="assets/images/green-animal.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="girl">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -380,7 +397,7 @@ winner
      <img class="card-value" src="assets/images/elephant.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card "data-framework ="girl">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -388,7 +405,7 @@ winner
      <img class="card-value" src="assets/images/elephant.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="key">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -396,7 +413,7 @@ winner
      <img class="card-value" src="assets/images/dolphin.jpg" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card "data-framework ="key">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -404,7 +421,7 @@ winner
      <img class="card-value" src="assets/images/dolphin.jpg" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="board">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -412,7 +429,7 @@ winner
      <img class="card-value" src="assets/images/cow.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card "data-framework ="board">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -420,7 +437,7 @@ winner
      <img class="card-value" src="assets/images/cow.png" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card "data-framework ="rat">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -428,7 +445,7 @@ winner
      <img class="card-value" src="assets/images/chicken.jpg" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card "data-framework ="rat">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -436,7 +453,7 @@ winner
      <img class="card-value" src="assets/images/chicken.jpg" >
     </div>
    </div>
-    <div class="card ">
+    <div class="card " data-framework ="cunch">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -445,7 +462,7 @@ winner
     </div>
    </div>
    
-    <div class="card ">
+    <div class="card " data-framework ="cunch">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -454,6 +471,12 @@ winner
     </div>
    </div>
    </div>
+    <div class="right-arrow">
+ <a href="#home">
+  
+  <img src="assets/images/white-arrow-right.png"width="42" height="42">
+ </a>
+</div>
  </div>
  
 <!-- start of game section -->

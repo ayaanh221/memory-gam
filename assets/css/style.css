@@ -14,15 +14,21 @@ body {
 
 /*------------------------naigation bar-----------------------------*/
 
-.navbar{
-font-family: fantasy;
-font-size: 30px;
-letter-spacing: .1rem;
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: .3rem;
+ background:transparent;
+
+ 
+   
 }
 
 /*------------------------home-----------------------------*/
 #home{
-    padding: 150px;
+    padding: 150px; 
    
 }
 
@@ -53,33 +59,29 @@ letter-spacing: .1rem;
 
 }
 
-@media (max-width:600px){
-    div .page-title{
-       font-family: fantasy;
-       font-size: 40px;
-     text-align: left;
-     font-stretch: expanded;
-     margin: -100px;
-     padding: 40px;
+
+
+/*-------------------------arrow-----------------------------*/
+
+.right-arrow{
     
-    
-     
-      
-    }
-   div .lead{
-        font-size: 40px;
-    text-align: left;
-    }
+    text-align: center;
 }
+ 
+  
+    
+    
 
 /*-------------------------game-----------------------------*/
 
 .game-title{
-    font-family: monospace;
-    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    padding: 40px 0px;
+    
+color: black;
 
 font-size: 50px;
-text-decoration: underline;
+text-decoration: none;
 text-transform: uppercase;
 text-align: center;
 
@@ -90,7 +92,7 @@ text-align: center;
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0px;
 }
 
 .game-info {
@@ -99,6 +101,7 @@ text-align: center;
     font-family: 'Wallpoet', cursive;
     text-transform: uppercase;
 }
+
 
 .game-container {
     display: grid;
@@ -133,6 +136,9 @@ text-align: center;
     transition: transform 500ms ease-in-out;
 }
 
+
+
+
 .card.visible .card-back {
     transform: rotateY(-180deg);
 }
@@ -153,24 +159,37 @@ text-align: center;
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
+  
     justify-content:center;
     align-items:center;
     z-index: 100;
     color:#ff6d00;
     font-family: cursive;
     display: none;
+    
+}
+medium .overlay-img{
+   
+    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content:center;
+    align-items:center;
+ 
+    color:#ff6d00;
+    font-family: cursive;
+    display: none;
+     position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+       
+        top: 40%;
+  
 }
 
-.overlay-text.visible{
-    display: flex;
-    
-    animation: overlay-grow 500ms forwards;
-    flex-direction:column;
-}
-.overlay-text-small {
-    font-size:.3em;
-}
+
+
 @keyframes overlay-grow{
     from{
         background-color: rgba(0,0,0,0);
@@ -233,7 +252,7 @@ text-align: center;
     transform: scale(1)
 }
 
-@media (max-width:600px){
+@media (max-width:700px){
     .game-container{
         grid-template-columns: repeat(2,auto);
     }
@@ -250,3 +269,27 @@ text-align: center;
        
    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
