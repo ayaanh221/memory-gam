@@ -1,8 +1,17 @@
 {
+    "build": {
+        "@saveall": true
+    },
+    "instance": {
+        "@automaticShutdown": "30"
+    },
     "language": {
         "tern_defs": {
             "json()": {
                 "browser": {
+                    "enabled": true
+                },
+                "config": {
                     "enabled": true
                 },
                 "ecma5": {
