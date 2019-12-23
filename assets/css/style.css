@@ -1,3 +1,7 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 * {
     box-sizing: border-box;
 }
@@ -12,63 +16,61 @@ body {
 
 
 
-/*------------------------naigation bar-----------------------------*/
 
 
-.navbar {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: .3rem;
- background:transparent;
-
- 
-   
-}
 
 /*------------------------home-----------------------------*/
+
+
 #home{
     padding: 150px; 
    
 }
 
 
-#landing {
-    background-color: red;
-}
-
-
 .page-title {
-    color: #4a0000;
-    font-family: 'Wallpoet', cursive;
-    font-weight: normal;
-    text-align: center;
-    font-size: 6em;
-    text-transform: uppercase;
+  color: black;
+  font-family: Creepy, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
 }
-
-
-.lead {
-    color: #000000;
-    font-family: 'Wallpoet', cursive;
-    font-size: 10em;
-
-    text-transform: uppercase;
-    text-align: center;
-    padding: 50px;
-
-}
-
-
-
-/*-------------------------arrow-----------------------------*/
-
-.right-arrow{
-    
-    text-align: center;
-}
- 
+.mini{
+  text-align: center;
   
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  font-family: Lunacy, serif;
+  color: #FFBB89;
+  font-size: 4em;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  height: 175px;
+  width: 125px;
+}
+
+
+
+
+
     
     
 
@@ -106,7 +108,7 @@ text-align: center;
 .game-container {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
+ 
     margin: 50px;
     justify-content: center;
     perspective: 500px;
@@ -153,67 +155,61 @@ text-align: center;
 
 
 
- .overlay-text{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  
-    justify-content:center;
-    align-items:center;
-    z-index: 100;
-    color:#ff6d00;
-    font-family: cursive;
-    display: none;
-    
-}
-medium .overlay-img{
-   
-    
-    left: 0;
-    right: 0;
-    bottom: 0;
-    justify-content:center;
-    align-items:center;
- 
-    color:#ff6d00;
-    font-family: cursive;
-    display: none;
-     position: absolute;
-        z-index: 999;
-        margin: 0 auto;
-       
-        top: 40%;
-  
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: #bd0404;
+  font-family: Creepy, serif;
 }
 
+.overlay-text-small {
+  font-size: .3em;
+}
 
+.overlay-text.visible {
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+}
 
-@keyframes overlay-grow{
-    from{
-        background-color: rgba(0,0,0,0);
-        font-size: 0;
-        
-    }
-    to{
-        font-size: 10em;
-        background-color: rgba(0,0,0,.8);
-        
-    }
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 10em;
+  }
 }
 
 @keyframes dance {
-    0%,100%{
-        transform: rotate(0);
-    }
-    25%{
-      transform:   rotate(-30deg);
-    }
-    75%{
-        transform: rotate(30deg);
-    }
+  0%, 100%  {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
 }
+
+
+
+
+
+
+
+
+ 
 .card-back {
     background-color: white;
     border-color: black;
@@ -260,36 +256,59 @@ medium .overlay-img{
        flex-direction:column;
        align-items:center;
     }
-   .page-title{
-       font-size: 40px;
-       color: black;
-   }
+   
    .game-info{
-       font-size: 30px;
-       
-   }
+       color: #4a0000;
+    font-family: 'Wallpoet', cursive;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+    text-transform: uppercase;
 }
 
+  
+}
 
+/*-------------------------footer-----------------------------*/
 
+#lab_social_icon_footer {
+  padding: 40px 0;
+  background-color: transparent;
+}
 
+#lab_social_icon_footer a {
+  color: #333;
+}
 
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
 
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
 
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
 
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
 
