@@ -28,9 +28,36 @@ body {
 }
 
 
+.levels{
+  font-family: sans-serif;
+  
+  color: black;
+  text-align: center;
+display: inline-block;
+text-transform: uppercase;
+position: relative;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid white;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #f7822f;
+  
+  
+}
+
+.levels:hover{
+  background-color:#eb9b63;
+  color: black;
+  text-decoration: none;
+  transition: all 500ms;
+  font-weight: bold;
+}
 .page-title {
   color: black;
-  font-family: Creepy, serif;
+  font-family:  serif;
   font-weight: normal;
   text-align: center;
   font-size: 6em;
@@ -47,7 +74,7 @@ body {
 }
 
 .game-info {
-  font-family: Lunacy, serif;
+  font-family:  serif;
   color: #FFBB89;
   font-size: 4em;
 }
@@ -62,9 +89,9 @@ body {
 }
 
 .card {
-  position: relative;
-  height: 175px;
-  width: 125px;
+position: relative;
+  height: 170px;
+  width: 120px;
 }
 
 
@@ -75,7 +102,9 @@ body {
     
 
 /*-------------------------game-----------------------------*/
-
+#mdium,#hrd{
+  display: none ;
+}
 .game-title{
     font-family: 'Roboto', sans-serif;
     padding: 40px 0px;
@@ -166,7 +195,7 @@ text-align: center;
   align-items: center;
   z-index: 100;
   color: #bd0404;
-  font-family: Creepy, serif;
+  font-family:  serif;
 }
 
 .overlay-text-small {
@@ -265,6 +294,15 @@ text-align: center;
     font-size: 6em;
     text-transform: uppercase;
 }
+
+  
+}
+
+
+@media (max-width:700px){
+    #hard,#medium,.levels.game-info-container{
+        
+   visibility: hidden;
 
   
 }

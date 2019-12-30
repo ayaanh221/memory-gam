@@ -1,3 +1,5 @@
+
+
 class AudioController {
     constructor() {
         this.bgMusic = new Audio('assets/audio/game background music.mp3');
@@ -31,6 +33,12 @@ class AudioController {
     }
 }
 
+
+
+
+
+
+
 class MixOrMatch {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
@@ -40,7 +48,7 @@ class MixOrMatch {
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }
-
+ 
     startGame() {
         this.totalClicks = 0;
         this.timeRemaining = this.totalTime;
@@ -75,12 +83,20 @@ class MixOrMatch {
         this.audioController.victory();
         document.getElementById('victory-text').classList.add('visible');
     }
+     if (cardsFlipped === Cards.length) {
+    stopTime();
+    $('.modal').css('display','block');
+    }     
+    }
+    });
     hideCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('visible');
             card.classList.remove('matched');
         });
+        
     }
+    
     flipCard(card) {
         if(this.canFlipCard(card)) {
             this.audioController.flip();
@@ -147,6 +163,21 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new MixOrMatch(100, cards);
+    
+    links();
+    
+if (links=="easy"){
+ ("div.easy").show();
+}
+
+if (links=="medium"){
+ ("div.medium").show();
+}
+
+if (document.getElementById=="hard"){
+ ("div.hard").show();
+}
+
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -161,3 +192,4 @@ function ready() {
         });
     });
 }
+   
