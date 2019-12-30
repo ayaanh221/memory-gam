@@ -61,11 +61,13 @@ position: relative;
   font-weight: normal;
   text-align: center;
   font-size: 6em;
+ padding: 40px;
 }
 .mini{
   text-align: center;
-  
+  padding-bottom:  20px;
 }
+
 
 .game-info-container {
   grid-column: 1 / -1;
@@ -102,22 +104,9 @@ position: relative;
     
 
 /*-------------------------game-----------------------------*/
-#mdium,#hrd{
-  display: none ;
-}
-.game-title{
-    font-family: 'Roboto', sans-serif;
-    padding: 40px 0px;
-    
-color: black;
-
-font-size: 50px;
-text-decoration: none;
-text-transform: uppercase;
-text-align: center;
 
 
-}
+
 
 .game-info-container {
     grid-column: 1 / -1;
@@ -298,15 +287,16 @@ text-align: center;
   
 }
 
-
 @media (max-width:700px){
-    #hard,#medium,.levels.game-info-container{
-        
-   visibility: hidden;
+    #medium,#hard ,.game-info,.levels{
+     display: none ;  
+    }
+   
 
   
 }
 
+    
 /*-------------------------footer-----------------------------*/
 
 #lab_social_icon_footer {

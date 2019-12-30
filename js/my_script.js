@@ -1,11 +1,9 @@
-
-
 class AudioController {
     constructor() {
-        this.bgMusic = new Audio('assets/audio/game background music.mp3');
+        this.bgMusic = new Audio('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/creepy.mp3');
         this.flipSound = new Audio('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/flip.wav');
-        this.matchSound = new Audio('assets/audio/game background music.mp3');
-        this.winnerSound = new Audio('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/victory.wav');
+        this.matchSound = new Audio('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/match.wav');
+        this.victorySound = new Audio('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/victory.wav');
         this.gameOverSound = new Audio('Assets/Audio/gameOver.wav');
         this.bgMusic.volume = 0.5;
         this.bgMusic.loop = true;
@@ -23,7 +21,7 @@ class AudioController {
     match() {
         this.matchSound.play();
     }
-    winner() {
+    victory() {
         this.stopMusic();
         this.victorySound.play();
     }
@@ -32,12 +30,6 @@ class AudioController {
         this.gameOverSound.play();
     }
 }
-
-
-
-
-
-
 
 class MixOrMatch {
     constructor(totalTime, cards) {
@@ -48,7 +40,7 @@ class MixOrMatch {
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }
- 
+
     startGame() {
         this.totalClicks = 0;
         this.timeRemaining = this.totalTime;
@@ -78,25 +70,17 @@ class MixOrMatch {
         this.audioController.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
     }
-    winner() {
+    victory() {
         clearInterval(this.countdown);
         this.audioController.victory();
         document.getElementById('victory-text').classList.add('visible');
     }
-     if (cardsFlipped === Cards.length) {
-    stopTime();
-    $('.modal').css('display','block');
-    }     
-    }
-    });
     hideCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('visible');
             card.classList.remove('matched');
         });
-        
     }
-    
     flipCard(card) {
         if(this.canFlipCard(card)) {
             this.audioController.flip();
@@ -163,21 +147,6 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new MixOrMatch(100, cards);
-    
-    links();
-    
-if (links=="easy"){
- ("div.easy").show();
-}
-
-if (links=="medium"){
- ("div.medium").show();
-}
-
-if (document.getElementById=="hard"){
- ("div.hard").show();
-}
-
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -192,4 +161,3 @@ if (document.getElementById=="hard"){
         });
     });
 }
-   
