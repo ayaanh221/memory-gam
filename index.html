@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 <link rel="stylesheet" href="easy.html" type="text/css" />
 <link rel="stylesheet" href="js/my_script.js"  />
-
+<script  src="js/my_script.js" async></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
@@ -30,6 +30,7 @@
 
 
 
+<button id="playpausebtn"  ><img src="assets/images/PikPng.com_audio-icon-png_2017969.png" height="30px" width="30px"></button>
 
   
 
@@ -51,24 +52,10 @@
  <!-- start of  game section -->
 <h1 class="page-title">Mix-and-Match</h1>
 <h3 class="mini"> HOW GOOD IS YOUR MEMORY?</h3>
-
-
-
-
-
   <hr class="my-4">
-  
-  
-   
-  
  
   
-  
- <h2 class= "levels"> <a href ="#easy"> easy</a></h2>
- <h2 class="levels"> <a href="#medium">medium</a></h2>
- <h2 class="levels"><a href="#hard"> hard</a></h2>
-  
- <div class="overlay-text  ">
+ <div class="overlay-text visible ">
   Click to start
  </div>
   <div id="game-over-text" class="overlay-text  ">
@@ -78,13 +65,16 @@
  <div id="winner-text" class="overlay-text">
 winner
  <span class="overlay-text-small"> click to restart</span>
- </div>
+ </div> 
+ 
+ <h2 class= "levels" onclick="easy()">   <a href ="#easy"> easy</a></h2>
+  <h2 class= "levels" onclick="medium()"> <a href="#medium">medium</a></h2> 
+ <h2 class= "levels" onclick="hard()"> <a href="#hard"> hard</a></h2>
+ <!-- start of easy game section -->
 
-    
-
-   <!-- start of easy game section -->
 
 <div id="easy">
+ 
  <div class="overlay-text">
   Click to start
  </div>
@@ -99,7 +89,7 @@ winner
 
 
  <div class="game-container">
-  
+  <h1>easy</h1>
    <div class="game-info-container">
    
       
@@ -184,9 +174,10 @@ winner
    </div>
  </div>
  
-<!-- end of easy game section -->
-<!-- start of medium game section -->
+ <!-- start of medium game section -->
+ 
 
+  
  <div id="medium">
  <div class="overlay-text ">
   Click to start
@@ -202,6 +193,8 @@ winner
  </div>
  <div class="game-container">
    <div class="game-info-container">
+   
+      
      <div class="game-info">
        time: <span id="time-remaining">100</span>
      </div>
@@ -209,6 +202,9 @@ winner
       flips: <span id="flips">0</span>
      </div>
    </div>
+   
+   
+   
    <div class="card "  data-framework ="chip">
     <div class="card-back card-face visible">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
@@ -317,9 +313,17 @@ winner
 
 
 <!-- end of midium game section -->
+    
 
- <!-- start of hard game section -->
- <div id="hard">
+ 
+ 
+ 
+ <!--start of hard section-->
+ 
+ 
+ 
+
+  <div id="hard">
  <div class="overlay-text ">
   Click to start
  </div>
@@ -327,13 +331,15 @@ winner
  game over
  <span class="overlay-text-small"> click to restart</span>
  </div>
-
+ 
  <div id="winner-text" class="overlay-text">
 winner
- <span class="overlay-text-small"> click to restart</span>
+ <span class="overlay-text-small"> click for next level</span>
  </div>
  <div class="game-container">
    <div class="game-info-container">
+   
+      
      <div class="game-info">
        time: <span id="time-remaining">100</span>
      </div>
@@ -341,7 +347,10 @@ winner
       flips: <span id="flips">0</span>
      </div>
    </div>
-   <div class="card " data-framework ="school">
+   
+   
+   
+   <div class="card "  data-framework ="chip">
     <div class="card-back card-face visible">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -349,7 +358,7 @@ winner
      <img class="card-value" src="assets/images/snake.jpg" >
     </div>
    </div>
- <div class="card "  data-framework ="school">
+ <div class="card "  data-framework ="chip">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -358,7 +367,7 @@ winner
     </div>
    </div>
    
-    <div class="card "  data-framework ="cloths">
+    <div class="card "  data-framework ="troop">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -366,7 +375,7 @@ winner
      <img class="card-value" src="assets/images/lion.png" >
     </div>
    </div>
-    <div class="card " data-framework ="cloths">
+    <div class="card " data-framework ="troop">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -374,7 +383,7 @@ winner
      <img class="card-value" src="assets/images/lion.png" >
     </div>
    </div>
-    <div class="card " data-framework ="boy">
+    <div class="card " data-framework ="mats">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -382,7 +391,7 @@ winner
      <img class="card-value" src="assets/images/green-animal.png" >
     </div>
    </div>
-    <div class="card "data-framework ="boy">
+    <div class="card " data-framework ="mats">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -390,23 +399,7 @@ winner
      <img class="card-value" src="assets/images/green-animal.png" >
     </div>
    </div>
-    <div class="card " data-framework ="girl">
-    <div class="card-back card-face">
-     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
-    </div>
-    <div class="card-front card-face">
-     <img class="card-value" src="assets/images/elephant.png" >
-    </div>
-   </div>
-    <div class="card "data-framework ="girl">
-    <div class="card-back card-face">
-     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
-    </div>
-    <div class="card-front card-face">
-     <img class="card-value" src="assets/images/elephant.png" >
-    </div>
-   </div>
-    <div class="card " data-framework ="key">
+       <div class="card " data-framework ="key">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -438,7 +431,27 @@ winner
      <img class="card-value" src="assets/images/cow.png" >
     </div>
    </div>
-    <div class="card "data-framework ="rat">
+    <div class="card " data-framework ="rice">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+    <div class="card " data-framework ="rice">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+   
+   
+   
+    
+    <div class="card " data-framework ="chart">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -446,7 +459,7 @@ winner
      <img class="card-value" src="assets/images/chicken.jpg" >
     </div>
    </div>
-    <div class="card "data-framework ="rat">
+    <div class="card " data-framework ="chart">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -454,7 +467,7 @@ winner
      <img class="card-value" src="assets/images/chicken.jpg" >
     </div>
    </div>
-    <div class="card " data-framework ="cunch">
+    <div class="card "data-framework ="trafic">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -463,7 +476,7 @@ winner
     </div>
    </div>
    
-    <div class="card " data-framework ="cunch">
+    <div class="card "data-framework ="trafic">
     <div class="card-back card-face">
      <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
     </div>
@@ -473,6 +486,8 @@ winner
    </div>
    </div>
  </div>
+ 
+ <!--end of hard section-->
  <!--footer-->
  <section id="lab_social_icon_footer">
 <!-- Include Font Awesome Stylesheet in Header -->
@@ -486,15 +501,11 @@ winner
     </div>
 </div>
 </section>
-
 <!-- start of game section -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
   </body>
 </html>
-
-

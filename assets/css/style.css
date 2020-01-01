@@ -16,12 +16,22 @@ body {
 
 
 
+.button{
+  border:none;
+  cursor:pointer;
+  outline:none; 
+} 
 
 
 
+.playpausebtn{
+  width: 5px;
+  height: 5px;
+}
 /*------------------------home-----------------------------*/
-
-
+ #medium,#hard {
+     display: none ;  
+    }
 #home{
     padding: 150px; 
    
@@ -99,7 +109,9 @@ position: relative;
 
 
 
-
+.flips{
+text-align: center;
+}
     
     
 
@@ -339,4 +351,5 @@ position: relative;
 #lab_social_icon_footer #social-gp:hover {
   color: #d34836;
 }
+
 
