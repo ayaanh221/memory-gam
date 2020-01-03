@@ -146,8 +146,7 @@ class MixOrMatch {
             this.busy = false;
         }, 500)
         this.hideCards();
-        this.timer.innerText = this.timeRemaining;
-        this.ticker.innerText = this.totalClicks;
+       
     }
     startCountdown() {
         return setInterval(() => {

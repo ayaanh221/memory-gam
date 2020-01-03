@@ -21,14 +21,13 @@ body {
   border:none;
   cursor:pointer;
   outline:none; 
+ 
 } 
 
+		
 
 
-.playpausebtn{
-  width: 5px;
-  height: 5px;
-}
+
 /*------------------------home-----------------------------*/
  
 #home{
@@ -315,18 +314,12 @@ text-align: center;
 }
 
 @media (max-width:700px){
-    #medium.html,#hard.html ,.game-info,.levels{
+    #medium,#hard ,.game-info,.levels, .overlay-text-small{
      display: none ;  
     }
    
 }
 
-  @media (max-width:700px){
-    #easy.html{
-     display: block;  
-    }
-   
-}
 
 
 
