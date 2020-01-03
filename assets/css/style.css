@@ -30,16 +30,14 @@ body {
   height: 5px;
 }
 /*------------------------home-----------------------------*/
- #medium,#hard {
-     display: none ;  
-    }
+ 
 #home{
     padding: 150px; 
    
 }
 
 
-.levels{
+.levels,.level{
   font-family: sans-serif;
   
   color: black;
@@ -48,15 +46,14 @@ display: inline-block;
 text-transform: uppercase;
 position: relative;
  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  
   width: 50%;
   border: 3px solid white;
-  padding: 10px;
+  padding: 40px;
   text-decoration: none;
   background-color: #f7822f;
-  
-  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .levels:hover{
@@ -117,7 +114,13 @@ text-align: center;
     
     
     
-    
+    #back{
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
     
 /*-------------------------left arrow---------------------------*/
     
@@ -312,13 +315,20 @@ text-align: center;
 }
 
 @media (max-width:700px){
-    #medium,#hard ,.game-info,.levels{
+    #medium.html,#hard.html ,.game-info,.levels{
      display: none ;  
     }
    
-
-  
 }
+
+  @media (max-width:700px){
+    #easy.html{
+     display: block;  
+    }
+   
+}
+
+
 
     
 /*-------------------------footer-----------------------------*/

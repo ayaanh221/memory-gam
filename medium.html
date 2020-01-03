@@ -10,9 +10,10 @@
 <link rel="stylesheet" href="easy.html" type="text/css" />
 <link rel="stylesheet" href="js/my_script.js"  />
 <link rel="stylesheet" href="index.html" type="text/css" />
-<script  src="js/my_script.js" async></script>
-<script type="text/javascript" src="easy.html"></script>
-<script type="text/javascript" src="hard.html"></script>
+<link rel="stylesheet" href="easy.html" type="text/css" />
+<link rel="stylesheet" href="hard.html" type="text/css" />
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
@@ -45,52 +46,50 @@
 <h3 class="mini"> HOW GOOD IS YOUR MEMORY?</h3>
   <hr class="my-4">
   
-<h2 class= "levels" onclick="easy()">  <a href ="#easy"> easy</a></h2>
-   
+<div class="icon-bar">
 
- <h2 class= "levels" onclick="hard()"> <a href="#hard"> hard</a></h2>
+ 
 
   
- <div class="overlay-text visible ">
+<div class="overlay-text visible ">
   Click to start
  </div>
-  <div id="game-over-text" class="overlay-text  ">
- game over
- <span class="overlay-text-small"> click to restart</span>
- </div>
- <div id="winner-text" class="overlay-text ">
+  
+ <div id="victory-text" class="overlay-text ">
 winner
- <span class="overlay-text-small"> click to restart</span>
+ <span class="overlay-text-small" > <a href="hard.html">click for next level</span></a>
  </div> 
+ 
 
  <!-- start of medium game section -->
  
 
-  
+  <div id="back">
+ <a href="index.html">BACK</a>
+</div>
 
 
 
 
     
    
- <div id="medium.html">
+ <div id="medium">
  <div class="overlay-text ">
   Click to start
  </div>
-  <div id="game-over-text" class="overlay-text  ">
- game over
- <span class="overlay-text-small"> click to restart</span>
- </div>
+  
  
  <div id="winner-text" class="overlay-text">
 winner
- <span class="overlay-text-small"> click for next level</span>
+ <span class="overlay-text-small" > <a href="hard.html">click for next level</span></a>
  </div>
  <div class="game-container">
    <div class="game-info-container">
    
       
      <div class="game-info">
+      
+      
        medium
      </div>
       <div class="game-info">
@@ -225,6 +224,7 @@ winner
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script  src="js/my_script.js" async></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

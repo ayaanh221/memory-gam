@@ -158,12 +158,12 @@ class MixOrMatch {
         }, 1000);
     }
   
-          gameOver() {
+         
+     victory() {
         clearInterval(this.countdown);
-        this.audioController.gameOver(); 
-        document.getElementById('game-over-text').classList.add('visible');
+        this.audioController.victory();
+        document.getElementById('victory-text').classList.add('visible');
     }
-    
     hideCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('visible');
