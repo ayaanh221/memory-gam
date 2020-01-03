@@ -11,10 +11,11 @@ body {
     background: radial-gradient(#A4036F, #F29E4C);
     padding: 20px;
 }
+/*------------------------timer/new game----------------------------*/
 
 
 
-
+/*------------------------music-----------------------------*/
 
 .button{
   border:none;
@@ -113,6 +114,17 @@ position: relative;
 text-align: center;
 }
     
+    
+    
+    
+    
+    
+/*-------------------------left arrow---------------------------*/
+    
+  .left-arrow{
+    height: 10px;
+    width: 10px;
+  }
     
 
 /*-------------------------game-----------------------------*/

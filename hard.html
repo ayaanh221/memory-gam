@@ -1,0 +1,252 @@
+
+ <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="easy.html" type="text/css" />
+<link rel="stylesheet" href="js/my_script.js"  />
+<link rel="stylesheet" href="index.html" type="text/css" />
+<script type="text/javascript" src="hard.html"></script>
+
+
+<script  src="js/my_script.js" async></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+ 
+  
+  
+  
+  
+  <!-- start of landing page -->
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   
+    
+      
+     
+        
+
+
+
+<button id="playpausebtn"  ><img src="assets/images/PikPng.com_audio-icon-png_2017969.png" height="30px" width="30px"></button>
+
+  
+
+  <!-- end of landing page -->
+
+
+ <!-- start of  game section -->
+<h1 class="page-title">Mix-and-Match</h1>
+<h3 class="mini"> HOW GOOD IS YOUR MEMORY?</h3>
+  <hr class="my-4">
+  
+<h2 class= "levels" onclick="easy()">  <a href ="#easy.html"> easy</a></h2>
+   
+   <h2 class= "levels" onclick="medium()"> <a href="#medium.html">medium</a></h2> 
+ <h2 class= "levels" onclick="hard()"> <a href="#hard.html"> hard</a></h2>
+
+  
+ <div class="overlay-text visible ">
+  Click to start
+ </div>
+  <div id="game-over-text" class="overlay-text  ">
+ game over
+ <span class="overlay-text-small"> click to restart</span>
+ </div>
+ <div id="winner-text" class="overlay-text ">
+winner
+ <span class="overlay-text-small"> click to restart</span>
+ </div> 
+ 
+  <div id="hard.html">
+ <div class="overlay-text ">
+  Click to start
+ </div>
+  <div id="game-over-text" class="overlay-text  ">
+ game over
+ <span class="overlay-text-small"> click to restart</span>
+ </div>
+ 
+ <div id="winner-text" class="overlay-text">
+winner
+ <span class="overlay-text-small"> click for next level</span>
+ </div>
+ <div class="game-container">
+   <div class="game-info-container">
+   
+      
+   
+    <div class="game-info">
+       hard
+     </div>
+      <div class="game-info">
+      flips: <span id="flips">0</span>
+     </div>
+   </div>
+   
+   
+   <div class="card "  data-framework ="chip">
+    <div class="card-back card-face visible">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/snake.jpg" >
+    </div>
+   </div>
+ <div class="card "  data-framework ="chip">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/snake.jpg" >
+    </div>
+   </div>
+   
+    <div class="card "  data-framework ="troop">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/lion.png" >
+    </div>
+   </div>
+    <div class="card " data-framework ="troop">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/lion.png" >
+    </div>
+   </div>
+    <div class="card " data-framework ="mats">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+    <div class="card " data-framework ="mats">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+       <div class="card " data-framework ="key">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/dolphin.jpg" >
+    </div>
+   </div>
+    <div class="card "data-framework ="key">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/dolphin.jpg" >
+    </div>
+   </div>
+    <div class="card " data-framework ="board">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/cow.png" >
+    </div>
+   </div>
+    <div class="card "data-framework ="board">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/cow.png" >
+    </div>
+   </div>
+    <div class="card " data-framework ="rice">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+    <div class="card " data-framework ="rice">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+   
+   
+   
+    
+    <div class="card " data-framework ="chart">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/chicken.jpg" >
+    </div>
+   </div>
+    <div class="card " data-framework ="chart">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/chicken.jpg" >
+    </div>
+   </div>
+    <div class="card "data-framework ="trafic">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/fish.jpg" >
+    </div>
+   </div>
+   
+    <div class="card "data-framework ="trafic">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/fish.jpg" >
+    </div>
+   </div>
+   </div>
+ </div>
+ <!--end of hard section-->
+ <!--footer-->
+ <section id="lab_social_icon_footer">
+<!-- Include Font Awesome Stylesheet in Header -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+        <div class="text-center center-block">
+                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	            
+    </div>
+</div>
+</section>
+<!-- start of game section -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 <link rel="stylesheet" href="easy.html" type="text/css" />
 <link rel="stylesheet" href="js/my_script.js"  />
-<link rel="stylesheet" href="easy.html" type="text/css" />
-<link rel="stylesheet" href="medium.html" type="text/css" />
-<link rel="stylesheet" href="hard.html" type="text/css" />
+<link rel="stylesheet" href="index.html" type="text/css" />
 <script  src="js/my_script.js" async></script>
+<script type="text/javascript" src="medium.html"></script>
+<script type="text/javascript" src="hard.html"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
@@ -45,12 +45,10 @@
 <h3 class="mini"> HOW GOOD IS YOUR MEMORY?</h3>
   <hr class="my-4">
   
-<h2 class= "levels" onclick="easy()">  <a href ="easy.html"> easy</a></h2>
+  <h2 class= "levels" onclick="easy()">  <a href ="easy.html"> easy</a></h2>
    
    <h2 class= "levels" onclick="medium()"> <a href="medium.html">medium</a></h2> 
  <h2 class= "levels" onclick="hard()"> <a href="hard.html"> hard</a></h2>
-
-  
  <div class="overlay-text visible ">
   Click to start
  </div>
@@ -62,30 +60,109 @@
 winner
  <span class="overlay-text-small"> click to restart</span>
  </div> 
+ 
  <!-- start of easy game section -->
 
-
-
- 
- <!-- start of medium game section -->
  
 
+<div id="easy">
+ 
+ <div class="overlay-text">
+  Click to start
+ </div>
+  <div id="game-over-text" class="overlay-text  ">
+ game over
+ <span class="overlay-text-small "> click to restart</span>
+ </div>
+ <div id="winner-text" class="overlay-text">
+winner
+ <span class="overlay-text-small"> click for next level</span>
+ </div>
+
+<div class="game-container">
+ 
+   <div class="game-info-container">
   
-
-
-
-<!-- end of midium game section -->
-    
-
+      
+     <div class="game-info">
+      easy
+     </div>
+      <div class="game-info">
+      flips: <span id="flips">0</span>
+     </div>
+   </div>
+   
+   
+   <div class="card" data-framework ="trap">
+    <div class="card-back card-face ">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face"  >
+     <img class="card-value" src="assets/images/snake.jpg" >
+    </div>
+   </div>
+ <div class="card " data-framework ="trap">
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/snake.jpg" >
+    </div>
+   </div>
+   
+  <div class="card" data-framework ="token" >
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face" >
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+  
+    <div class="card" data-framework ="token" >
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/green-animal.png" >
+    </div>
+   </div>
+   
+    <div class="card " data-framework ="yogar">
+    <div class="card-back card-face"  >
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+      <div class="card "data-framework ="yogar" >
+    <div class="card-back card-face">
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face" >
+     <img class="card-value" src="assets/images/elephant.png" >
+    </div>
+   </div>
+   <div class="card " data-framework ="art ">
+    <div class="card-back card-face" >
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/cow.png" >
+    </div>
+   </div>
+   <div class="card "data-framework ="art ">
+    <div class="card-back card-face" >
+     <img class="animals" src="assets/images/4' X 4' wolf.jpg" >
+    </div>
+    <div class="card-front card-face">
+     <img class="card-value" src="assets/images/cow.png" >
+    </div>
+   </div>
+   </div>
+ </div>
  
- 
- 
- <!--start of hard section-->
- 
- 
- 
-
- <!--end of hard section-->
  <!--footer-->
  <section id="lab_social_icon_footer">
 <!-- Include Font Awesome Stylesheet in Header -->
