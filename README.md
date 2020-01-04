@@ -1,6 +1,6 @@
 #  Mix and Match
 -----
-The project i have decided to work on and make is a memory game, this game is a matching card game where you two card with the same animal on it. The game has three levels which are Easy,Medium and Hard, also the is a flip counter which count how many times you click each card the reason for this is to make the game more intresting.
+The project i have decided to work on and make is a memory game, this game is a matching card game where you two card with the same animal on it. The game has three levels which are Easy,Medium and Hard, also the is a flip counter which count how many times you click each card the reason for this is to make the game more intresting. [you can find a live demo](https://ayaanh221.github.io/memory-game/)
 
 #  UX
 -----
