@@ -72,10 +72,8 @@ function hard (){
         this.stopMusic();
         this.victorySound.play();
     }
-    gameOver() {
-        this.stopMusic();
-        this.gameOverSound.play();
-    }
+   
+    
 }
 
 
@@ -148,15 +146,15 @@ class MixOrMatch {
         this.hideCards();
        
     }
+    
     startCountdown() {
         return setInterval(() => {
-            this.timeRemaining--;
-            this.timer.innerText = this.timeRemaining;
-            if(this.timeRemaining === 0)
-                this.gameOver();
+           
+            
+            
+                
         }, 1000);
     }
-  
          
      victory() {
         clearInterval(this.countdown);
