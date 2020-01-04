@@ -58,10 +58,7 @@ function hard (){
     startMusic() {
         this.bgMusic.play();
     }
-    stopMusic() {
-        this.bgMusic.pause();
-        this.bgMusic.currentTime = 0;
-    }
+    
     flip() {
         this.flipSound.play();
     }
@@ -124,14 +121,12 @@ window.addEventListener("load", initAudioPlayer);
 class MixOrMatch {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
-       
-        this.ticker = document.getElementById('flips');
+       this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }
 
     startGame() {
         this.totalClicks = 0;
-        this.timeRemaining = this.totalTime;
         this.cardToCheck = null;
         this.matchedCards = [];
         this.busy = true;
