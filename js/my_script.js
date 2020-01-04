@@ -149,11 +149,7 @@ class MixOrMatch {
     
     startCountdown() {
         return setInterval(() => {
-           
-            
-            
-                
-        }, 1000);
+             }, 1000);
     }
          
      victory() {
