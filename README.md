@@ -54,7 +54,7 @@ to deploy you would have to -: 1.Creat respository 2.Push your code 3.Go to sett
  
 I used the two following videos to get to ideas and help on how to code a card game [video 1](https://www.youtube.com/watch?v=ZniVgo8U7ek&list=LLvkm_Fx2R6CFvKmjWx5TZHA&index=33&t=0s) and 
 [video 2](https://www.youtube.com/watch?v=28VfzEiJgy4&list=LLvkm_Fx2R6CFvKmjWx5TZHA&index=29).
-My audio was from [here](https://www.fesliyanstudios.com)
+My audio was from [here](https://www.fesliyanstudios.com) and [video 2](https://www.youtube.com/watch?v=28VfzEiJgy4&list=LLvkm_Fx2R6CFvKmjWx5TZHA&index=29).
 my images was from [here](www.clipartbest.com)
 
 #### Media
