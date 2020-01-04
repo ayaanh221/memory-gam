@@ -124,9 +124,7 @@ window.addEventListener("load", initAudioPlayer);
 class MixOrMatch {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
-        this.totalTime = totalTime;
-        this.timeRemaining = totalTime;
-        this.timer = document.getElementById('time-remaining')
+       
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }

@@ -11,7 +11,6 @@ body {
     background: radial-gradient(#A4036F, #F29E4C);
     padding: 20px;
 }
-/*------------------------timer/new game----------------------------*/
 
 
 
@@ -121,13 +120,7 @@ text-align: center;
       color: black;
     }
     
-/*-------------------------left arrow---------------------------*/
-    
-  .left-arrow{
-    height: 10px;
-    width: 10px;
-  }
-    
+
 
 /*-------------------------game-----------------------------*/
 
