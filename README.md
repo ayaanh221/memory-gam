@@ -1,4 +1,4 @@
-#h1 Mix and Match
+# h1 Mix and Match
 # hr
 The project i have decided to work on and make is a memory game, this game is a matching card game where you two card with the same animal on it. The game has three levels which are Easy,Medium and Hard, also the is a flip counter which count how many times you click each card the reason for this is to make the game more intresting.
 
@@ -14,7 +14,7 @@ Here is list of the most important user stories that has been brought up from th
 1.I want to open the game and find it easy to play without having to be confused and lost without reading the instructions.
 2. I want to use every tool on the website and know it is working without any problems.
 3.what type of genre/game do i want to play?
-4. Dose this person have enough information on the website ?[ my wireframes](https://www.google.com)
+4. Dose this person have enough information on the website ?[ my wireframes](PORTFOLIO MEMORY GAME.bmpr)
 
 
 # h1 feature
@@ -51,7 +51,7 @@ to deploy you would have to -: 1.Creat respository 2.Push your code 3.Go to sett
 # h1 Credit
 
 # hr
-# h4 h4 Content
+# h4Content
  
 I used the two following videos to get to ideas and help on how to code a card game [video 1](https://www.youtube.com/watch?v=ZniVgo8U7ek&list=LLvkm_Fx2R6CFvKmjWx5TZHA&index=33&t=0s) and 
 [video 2](https://www.youtube.com/watch?v=28VfzEiJgy4&list=LLvkm_Fx2R6CFvKmjWx5TZHA&index=29).
