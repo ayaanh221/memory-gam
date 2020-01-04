@@ -1,51 +1,6 @@
-var flag = 1;
-function easy (){
-    if(flag==1)
-    {
-        document.getElementById("easy").style.display="none";
-        flag=0;
-    }
-    else{
-        document.getElementById("easy").style.display="block";
-               flag=1;
-    }
-}
 
 
-
-var flag = 1;
-function medium (){
-    if(flag==1)
-    {
-        document.getElementById("medium").style.display="none";
-        flag=0;
-    }
-    else{
-        document.getElementById("medium").style.display="block";
-               flag=1;
-    }
-}
-
-
-
-var flag = 1;
-function hard (){
-    if(flag==1)
-    {
-        document.getElementById("hard").style.display="none";
-        flag=0;
-    }
-    else{
-        document.getElementById("hard").style.display="block";
-               flag=1;
-    }
-}
-
-
-
-
-
-  class AudioController {
+ class AudioController {
     constructor() {
                this.bgMusic = new Audio();
         this.flipSound = new Audio('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/flip.wav');
@@ -72,20 +27,7 @@ function hard (){
    
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-var audio, playbtn, mutebtn, seek_bar;
+var audio, playbtn, mutebtn;
 function initAudioPlayer(){
 	audio = new Audio();
 	audio.src = 'assets/audio/game background music.mp3';
@@ -214,9 +156,9 @@ class MixOrMatch {
 }
 
 if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready)
+    document.addEventListener('DOMContentLoaded', ready);
 } else {
-    ready()
+    ready();
 }
 
 function ready() {
